@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRRS1PRRQM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DRRS1PRRQM');
+    </script>
+    <script src="/Static/Scripts/func.js"></script>
+    <title>Celestial | Settings</title>
+    <link rel="icon" href="/Static/Assets/Fav-Img/BIGFAV.png">
+    <link rel="stylesheet" href="/Static/Assets/Themes/Default.css">
+    <script src="/Static/Scripts/themes.js"></script>
+    <script src="/Static/Scripts/cloak.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="apps.html">Apps</a>
+      <a href="movies.html">Movies</a>
+      <a href="chat.html">Chat</a>
+      <a href="settings.html">Settings</a>
+    </div>
+    <h1 class="title">Settings</h1>
+    <div class="settings-container">
+      <div class="blank">
+        <h3>Open in About:Blank</h3>
+        <button class="blankbutton" onclick="aboutblank()">Launch About:Blank</button>
+      </div>
+      <div class="cloakerr">
+        <h3>Tab Cloak</h3>
+        <div class="imgbutton">
+        <button value="Google" id="google" onclick="googleCloak();">
+          <img src="https://expresswriters.com/wp-content/uploads/2015/09/google-new-logo-450x450.jpg" alt="Google">
+        </button>
+        <button value="Gmail" id="gmail" onclick="gmailCloak();">
+          <img src="https://pbs.twimg.com/media/EjpVl1XX0AEgQm1?format=jpg&name=360x360" alt="Gmail">
+        </button>
+        <button value="Schoology" id="schoology" onclick="schoologyCloak();">
+          <img src="https://lausdschoology.azurewebsites.net/assets/images/schoology/schoologyLogo.png" alt="Schoology">
+        </button>
+        <button value="Classroom" id="classroom" onclick="classroomCloak();">
+          <img src="https://visualpharm.com/assets/356/Google%20Classroom-595b40b65ba036ed117d4179.svg" alt="Classroom">
+        </button>
+        <button value="Docs" id="docs" onclick="docsCloak();">
+          <img src="https://timingapp.com/cdn-cgi/image/format=auto,width=256/img/app-icons/com.google.Docs/logo.svg.png" alt="Docs">
+        </button>
+        </div>
+      </div>
+      <div class="yaytheme" id="dropdown">
+        <h3>Themes</h3>
+        <h2 style="font-size: 20px;">*Credits to Naomi for the themes*</h2>
+        <h5>Select a Theme:</h5>
+        <label for="theme" class="select">
+          <select name="theme" id="themes" class="td">
+              <option value="Default">Default</option>
+              <option value="Light">Light Mode</option>
+              <option value="Banana">Banana</option>
+              <option value="Ebony">🐈‍⬛ Ebony</otpion>
+              <!--<option value="Biege">Biege</option>-->
+              <!--<option value="SoftBabyBlue">Soft Baby Blue</option>-->
+              <option value="Blueberry">Blueberry</option>
+              <!--<option value="Turquiose">Turquiose</option>-->
+              <!--<option value="Violet">Violet</option>-->
+              <!--<option value="SalmonPink">Salmon Pink</option>-->
+              <option value="HotPink">Hot Pink</option>
+              <!--<option value="Kiwi">Kiwi</option>-->
+              <option value="ForestGreen">Forest Green</option>
+              <!--<option value="SoftRed">Red</option>-->
+              <option value="Cherry">Cherry</option>
+              <!--<option value="Orange">Orange</option>-->
+              <!--<option value="Gem">Gem</option>-->
+              <!--<option value="Coffee">Coffee</option>-->
+              <!--<option>Pitch Black</option> Coming Soon -->
+          </select>
+        </label>
+        <h2 style="margin-top: 30px; font-size: 20px;">More Themes Soon!</h2>
+        </div>
+    </div>
+    <div class="bareswitch">
+      <h3>Bare Switcher</h3>
+      <h5 style="font-size: 18px;">Select a Bare according to your blocker</h5>
+      <label for="bare" class="select">
+        <select name="bare" class="bare" id="bareSwitcher" class="td">
+          <option value="Lightspeed">Lightspeed</option>
+          <option value="ContentKeeper">Content Keeper</option>
+          <option value="GoGuardian">GoGuardian</option>
+        </select>
+      </label>
+    </div>      
+    <script src="/Static/Scripts/settings.js"></script>
+    <script>
+      function aboutblank() {
+        var win = window.open(); var url = 'settings.html'; var iframe = win.document.createElement('iframe'); iframe.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;"; iframe.src = url; win.document.body.appendChild(iframe);
+      }
+    </script>
+  </body>
+</html>  

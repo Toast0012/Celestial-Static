@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRRS1PRRQM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DRRS1PRRQM');
+    </script>
+    <script src="/Static/Scripts/func.js"></script>
+    <title>Celestial | Apps</title>
+    <link rel="icon" href="/Static/Assets/Fav-Img/BIGFAV.png">
+    <script src="/Static/Scripts/cloak.js"></script>
+    <script>
+      window.onload = function() {
+        let encodedAg = sessionStorage.getItem("agUrl");
+        encodedAg = "/service/" + encodedAg;
+        document.querySelector("#siteurl").src = encodedAg;
+        
+        document.head.appendChild(scriptElement);
+      } 
+    </script>  
+  </head>
+  <body>
+    <script src="../index.js"></script>
+    <script src="../uv/uv.bundle.js"></script>
+    <script src="../uv/uv.config.js"></script>
+    <script src="../uv/uv.handler.js"></script>
+    <script src="../uv/uv.sw.js"></script>
+    <script src="/Static/Scripts/apps.js"></script>
+    <script>
+      window.navigator.serviceWorker
+      .register("../sw.js",  {
+        scope: __uv$config.prefix,
+      })
+    </script>
+    <iframe src="loading.html" id="siteurl" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+  </body>
+</html>       
