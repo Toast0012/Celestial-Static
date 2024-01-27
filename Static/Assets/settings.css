@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Oswald:wght@500&display=swap');
+
+body {
+  background-color: #1e1e1e;
+  font-family: Lexend;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 60px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #121010;
+  border-radius: 8px;
+  height: 70px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+  padding: 14px 14px;
+  transition-duration: 0.4s;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.navbar a:hover {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+
+.settingscontainer {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+}
+
+.blank {
+  background-color: #332f2f;
+  font-family: Lexend;
+  float: left;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.blank:hover {
+  transform: translateY(-10px);
+}
+
+.blank h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.blank button {
+  border-radius: 9px;
+  font-family: Lexend;
+  padding: 30px;
+  background-color: #6d25c4;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+
+.blank button:hover {
+  cursor: pointer;
+  background-color: #4f109c;
+}
+
+.cloakerr {
+  background-color: #332f2f;
+  font-family: Lexend;
+  float: left;
+  border-radius: 8px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 20px;
+}
+
+.cloakerr:hover {
+  transform: translateY(-10px);
+}
+
+.cloakerr h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+#google {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#google:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+#gmail {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#gmail:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+#schoology {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#schoology:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+#classroom {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  background-color: white;
+}
+
+#classroom:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+#docs {
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.54s ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+#docs:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  opacity: 0.8;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}
+
+.yaytheme {
+  background-color: #332f2f;
+  font-family: Lexend;
+  float: left;
+  border-radius: 8px;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.54 ease-in-out, opacity 0.5s ease-in-out;
+  transition-duration: 0.4s;
+  color: white;
+}
+
+.yaytheme:hover {
+  transform: translateY(-10px);
+}
+
+.yaytheme h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.yaytheme h5 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#themes {
+  border-radius: 5px;
+  border: none;
+  background-color: #4d4a4a;
+  font-family: Lexend;
+  transition-duration: 0.4s;
+  color: white;
+  height: 50px;
+  width: 180px;
+  font-size: 20px;
+}

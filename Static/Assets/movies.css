@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@600&family=Oswald:wght@500&display=swap');
+
+body {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  font-family: Lexend;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  margin-top: 100px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  postion: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  background-color: #121010;
+  border-radius: 8px;
+  height: 70px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: Lexend;
+  float: left;
+  padding: 14px 14px;
+  transition-duration: 0.4s;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+.navbar a:hover {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: auto;
+}
+
+.search-container input {
+  border-radius: 7px;
+  width: 100%;
+  font-family: Lexend;
+  height: 50px;
+  border: none;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#seperator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.movie-tile {
+  height: 330px;
+  width: 290px;
+  border-radius: 20px;
+  background-color: #262525;
+  color: white;
+  transition: transform 0.2 ease-in-out;
+  transition-duration: 0.4s;
+  margin-right: 15px;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+
+.movie-tile:hover {
+  text-decoration: none;
+  transform: scale(1.02);
+  cursor: pointer
+}
+
+.movie-icon {
+  border-radius: 20px;
+  height: 210px;
+  width: 210px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.movie-title {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transform: translateY(-50%);
+  font-family: Lexend;
+  margin-top: 65px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-wrap: wrap;
+}
