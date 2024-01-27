@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRRS1PRRQM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DRRS1PRRQM');
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/Static/Scripts/func.js"></script>
+    <title>Celestial</title>
+    <link rel="icon" href="/Static/Assets/Fav-Img/BIGFAV.png">
+    <script src="/Static/Scripts/cloak.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Static/Assets/Themes/Default.css">
+    <script src="/Static/Scripts/themes.js"></script>
+    <script src="protohandler.js"></script>
+    <script src="index.js" defer></script>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="/Static/games.html">Games</a>
+      <a href="/Static/apps.html">Apps</a>
+      <a href="/Static/movies.html">Movies</a>
+      <a href="/Static/chat.html">Chat</a>
+      <a href="/Static/settings.html">Settings</a>
+    </div>
+    <h1 class="title">Celestial</h1>
+    <form id="form" class="search-container">
+      <input id="search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+      <input id="address" type="text" placeholder="Search the web freely" />
+    </form>
+    <div class="footer">
+      <button onclick="window.location.href='https://github.com/Toast0012'">Github</button>
+      <button onclick="window.location.href='https://discord.gg/Uk2tdG8xfF'">Discord</button>
+    </div>  
+</body>
+</html>
