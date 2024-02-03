@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/a/',
-    bare: 'https://mathdocs.freedns.rocks/outerspace/',
+    bare: 'https://celestial.iii.cl/v/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
