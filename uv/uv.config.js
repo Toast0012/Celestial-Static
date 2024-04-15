@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Get the bare value from local storage
+  var bare = "https://dang.iii.cl"
   if (localStorage.bare == "lightspeed") {
-    self.__uv$config.bare = "https://dang.iii.cl/bare/";
+    bare = "https://dang.iii.cl/bare/";
   } else if (localStorage.bare == "contentkeeper") {
-    self.__uv$config.bare = "https://dontsnitchbro.iii.cl/bare/";
+    bare = "https://dontsnitchbro.iii.cl/bare/";
   } else if (localStorage.bare == "goguardian") {
-    self.__uv$config.bare = "https://example.com";
+    bare = "https://example.com";
   } else if (localStorage.bare == null) {
-    self.__uv$config.bare = "https://dang.iii.cl/bare/";
+    bare = "https://dang.iii.cl/bare/";
   }
 
 self.__uv$config = {
