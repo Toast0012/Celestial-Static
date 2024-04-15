@@ -9,7 +9,7 @@ if (localStorage.bare == "lightspeed") {
   bare = "https://dang.iii.cl/bare/";
 } else {
   bare = "https://dang.iii.cl/bare/";
-} 
+};
 
 
 self.__uv$config = {
