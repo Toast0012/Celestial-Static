@@ -1,16 +1,18 @@
-var bare = "https://dang.iii.cl";
-if (localStorage.bare == "lightspeed") {
-  bare = "https://dang.iii.cl/bare/";
-} else if (localStorage.bare == "contentkeeper") {
-  bare = "https://dontsnitchbro.iii.cl/bare/";
-} else if (localStorage.bare == "goguardian") {
-  bare = "https://example.com";
-} else if (localStorage.bare == null) {
-  bare = "https://dang.iii.cl/bare/";
+if (localStorage.bare == "default") {
+    var bare = "https://andromeda-bare.vercel.app";
+} else if (localStorage.bare == "default2") {
+    var bare = "https://andromedabare.vercel.app";
+} else if (localStorage.bare == "default3") {
+    var bare = "https://218-39-2-78-101-249-205-32-24-217-131.vercel.app";
+} else if (localStorage.bare == "sndefault") {
+    var bare = "https://phantom.lol/bare";
+} else if (localStorage.bare == "snalt") {
+    var bare = "https://multiplication.cheap-car-rental.com/bare";
+} else if (localStorage.bare == "indefault") {
+    var bare = "https://interstellar-deployable-mu.vercel.app/outerspace";
 } else {
-  bare = "https://dang.iii.cl/bare/";
+    var bare = "https://218-39-2-78-101-249-205-32-24-217-131.vercel.app";
 };
-
 
 self.__uv$config = {
     prefix: '/a/',
