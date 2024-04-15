@@ -14,7 +14,7 @@ if (localStorage.bare == "lightspeed") {
 
 self.__uv$config = {
     prefix: '/a/',
-    bare: "https://dang.iii.cl/bare/",
+    bare: bare,
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
