@@ -22,19 +22,22 @@ function classroomCloak() {
     tabCloak();
 }
 function schoologyCloak() {
-    localStorage.setItem('cloakedTitle', 'Home | Schoology')
-    localStorage.setItem('cloakedIcon', '/Static/Assets/Fav-Img/Schoologyfav.png')
+    localStorage.setItem('cloakedTitle', 'Home | Schoology');
+    localStorage.setItem('cloakedIcon', '/Static/Assets/Fav-Img/Schoologyfav.png');
     tabCloak();
 }
 
-var bareStored = localStorage.getItem("bare")
-var bareSel = document.getElementById("bareSwitcher")
+function applyBare(bare) {
+  localStorage.setItem('bare', bare);
+  console.log(localStorage.getItem('bare'));
+}
 
-function switchBare() {
-  var selecter = document.getElementById("bareSwitcher");
-  var selectedOption = selecter.value;
+var storedBare = localStorage.getItem('bare');
+const bareSelect = document.getElementById('bareSwitcher');
+bareSelect.value = storedBare;
 
-  localStorage.setItem("bare", selectedOption);
-  var storedChoice = localStorage.getItem("bare");
-  console.log(storedChoice)
-};
+bareSelect.addEventListener('change', function() {
+  const selectedBare = this.value;
+  localStorage.setItem('bare', selectedBare);
+  applyBare(selectedBare);
+})
