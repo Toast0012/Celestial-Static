@@ -68,6 +68,7 @@ body {
   border: none;
   margin-bottom: 20px;
   text-align: center;
+  transition: all .5s;
 }
 
 .search-container input:focus {
