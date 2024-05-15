@@ -52,7 +52,7 @@ body {
 .search-container {
   display: flex;
   flex-direction: row;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -61,12 +61,16 @@ body {
 
 .search-container input {
   border-radius: 7px;
-  width: 100%;
+  width: 450px;
   font-family: Lexend;
   height: 50px;
   border: none;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.search-container input:focus {
+  width: 700px;
 }
 
 .footer {
@@ -107,7 +111,7 @@ body {
   border-radius: 20px;
   background-color: #EDEAED;
   color: black;
-  transition: transform 0.2s ease-in-out;
+  transiti tansform 0.2s ease-in-out;
   transition-duration: 0.4s;
   margin-right: 15px;
   margin-left: auto;
